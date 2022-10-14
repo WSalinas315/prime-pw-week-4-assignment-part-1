@@ -84,7 +84,12 @@ console.log('#7 - Returns false since our test phrase was not found:', find('Uni
 // 8. Function to check if a letter is the first letter in a 
 //    string. Return true if it is, and false otherwise
 function isFirstLetter(letter, string) {
-
+  if(letter === string[0]){
+    //console.log('in isFirstLetter and letter', letter, 'equals string character', string[0]);
+    return true;
+  }
+  //console.log('in isFirstLetter and letter', letter, 'does not equal string character', string[0]);
+  return false;
 }
 console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
 console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
