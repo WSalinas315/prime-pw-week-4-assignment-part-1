@@ -119,7 +119,9 @@ function keepPositive( array ){
   }
   return positiveNums;
 }
+let negatives = [-3,-5,0,-84,0,-43534,-2];
 console.log('#10 - Should return an array of only positive numbers:', keepPositive(numsToAdd));
+console.log('#10 - Should return an empty array :', keepPositive(negatives));
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
