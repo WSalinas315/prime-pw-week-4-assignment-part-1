@@ -40,9 +40,9 @@ console.log('#4 - should return product of 3 numbers:', var1, '*', var2, '*', va
 //    or greater than zero, and false otherwise
 function isPositive( number ) {
   if ( number > 0 ){
-    return;
+    return true;
   }
-    return;
+    return false;
 }
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
@@ -53,9 +53,16 @@ console.log( 'isPositive - should say false', isPositive(-3) );
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
+let backyardCritters = ['Squirrel','Blue Jay','Bunny','Cardinal','Sparrow','Raccoon'];
+let ghostTown = [];
 function getLast( array ) {
-
+  if(array.length > 0){
+    return array[array.length-1];
+  }
+  return 'undefined';
 }
+console.log('#6 - Return last item of an array:', getLast(backyardCritters));
+console.log('#6 - Return undefined for an empty array:', getLast(ghostTown));
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
