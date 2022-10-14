@@ -110,8 +110,16 @@ console.log('#9 - Should return sum of numbers from the input array:', sumAll(nu
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
-
-
+function keepPositive( array ){
+  let positiveNums = [];
+  for(let item of array){
+    if(item > 0){
+      positiveNums.push(item);
+    }
+  }
+  return positiveNums;
+}
+console.log('#10 - Should return an array of only positive numbers:', keepPositive(numsToAdd));
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
